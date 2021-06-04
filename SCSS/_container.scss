@@ -1,0 +1,94 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    margin: auto 5rem;
+
+    .timer{
+        background-color: $white;
+        text-align: center;
+        border: 6px solid rgba($color: $black, $alpha: 0.3);
+        border-radius: 0.4rem;
+
+
+        &__time{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $dark-green;
+            font-size: 10rem;
+        }
+    }
+
+    .work{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: 4px solid rgba($color: $dark-red, $alpha: 0.2);
+
+        &__description{
+            font-size: 2rem;
+            color: rgba($color: $dark-green, $alpha: 0.5);
+        }
+    }
+
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5rem;
+
+        &__design{
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+
+            &.start{
+                background-color: $dark-green;
+                color: $white;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $green;
+                    transition: 150ms;
+                    box-shadow: 0 0 0.3rem black;
+                }
+            }
+
+            &.cancel{
+                background-color: $dark-red;
+                color: $white;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $red;
+                    transition: 150ms;
+                    box-shadow: 0 0 0.3rem black;
+                }
+            }
+        }
+    }
+
+    .activity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+
+        &__add{
+            margin-bottom: 0.7rem;
+            color: $dark-green;
+
+            &:hover{
+                cursor: pointer;
+                color: $green;
+            }
+        }
+
+        &__curiosity{
+            font-size: 12px;
+            color: rgba($color: #000000, $alpha: 0.7);
+            font-style: italic;
+        }
+    }
+}

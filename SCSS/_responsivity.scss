@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    html{
+        font-size: 75%; /* 14px */
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+

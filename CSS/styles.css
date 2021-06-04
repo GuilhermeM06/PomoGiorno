@@ -1,0 +1,123 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  width: 100vw;
+  background-color: #ac0d0d;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+header .title {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  color: #38b000;
+  margin-bottom: 0.5rem;
+}
+header .subtitle {
+  font-family: "Lobster", cursive;
+  color: #38b000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 5rem;
+  row-gap: 2rem;
+  margin: auto 5rem;
+}
+.container .timer {
+  background-color: white;
+  text-align: center;
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+}
+.container .timer__time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004b23;
+  font-size: 10rem;
+}
+.container .work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 4px solid rgba(172, 13, 13, 0.2);
+}
+.container .work__description {
+  font-size: 2rem;
+  color: rgba(0, 75, 35, 0.5);
+}
+.container .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+}
+.container .button__design {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.container .button__design.start {
+  background-color: #004b23;
+  color: white;
+}
+.container .button__design.start:hover {
+  cursor: pointer;
+  background-color: #38b000;
+  transition: 150ms;
+  box-shadow: 0 0 0.3rem black;
+}
+.container .button__design.cancel {
+  background-color: #ac0d0d;
+  color: white;
+}
+.container .button__design.cancel:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: 150ms;
+  box-shadow: 0 0 0.3rem black;
+}
+.container .activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.container .activity__add {
+  margin-bottom: 0.7rem;
+  color: #004b23;
+}
+.container .activity__add:hover {
+  cursor: pointer;
+  color: #38b000;
+}
+.container .activity__curiosity {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-title {
+  font-family: "Lobster", cursive;
+  font-size: 1.3rem;
+  color: black;
+  text-align: center;
+  padding: 4rem 0 2rem;
+  opacity: 0.3;
+  position: relative;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=styles.css.map */

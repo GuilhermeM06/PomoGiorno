@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-title{
+        font-family: 'Lobster', cursive;
+        font-size: 1.3rem;
+        color: black;
+
+        text-align: center;
+        padding: 4rem 0 2rem;
+    
+        opacity: 0.3;
+        position: relative;
+    
+        z-index: -1;
+    }
+}

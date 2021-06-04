@@ -1,0 +1,20 @@
+header{
+    width: 100vw;
+    background-color: $dark-red;
+    text-align: center;
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    .title{
+        font-family: 'Lobster', cursive;
+        font-size: 4rem;
+        color: $green;
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle{
+        font-family: 'Lobster', cursive;
+        color: $green;
+    }
+}
