@@ -1,7 +1,16 @@
+@mixin alignment($position){
+
+    display: flex;
+    align-items: center;
+    justify-content: $position;
+}
+
 @import 'colors';
 @import 'body';
 @import 'header';
 @import 'container';
+@import 'buttons';
+@import 'modal';
 @import 'footer';
 
 

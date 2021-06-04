@@ -34,40 +34,6 @@
         }
     }
 
-    .button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 5rem;
-
-        &__design{
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-
-            &.start{
-                background-color: $dark-green;
-                color: $white;
-                &:hover{
-                    cursor: pointer;
-                    background-color: $green;
-                    transition: 150ms;
-                    box-shadow: 0 0 0.3rem black;
-                }
-            }
-
-            &.cancel{
-                background-color: $dark-red;
-                color: $white;
-                &:hover{
-                    cursor: pointer;
-                    background-color: $red;
-                    transition: 150ms;
-                    box-shadow: 0 0 0.3rem black;
-                }
-            }
-        }
-    }
-
     .activity{
         display: flex;
         flex-direction: column;

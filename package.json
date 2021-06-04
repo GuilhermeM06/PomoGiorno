@@ -1,0 +1,23 @@
+{
+  "name": "projeto_sprint2",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para segunda sprint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeM06/projeto_sprint2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeM06/projeto_sprint2/issues"
+  },
+  "homepage": "https://github.com/GuilhermeM06/projeto_sprint2#readme",
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}
