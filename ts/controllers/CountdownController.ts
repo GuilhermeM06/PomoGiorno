@@ -3,22 +3,16 @@ const Counter = {
     start(contador){
         const initButton = document.getElementById('starter')
         initButton.addEventListener('click', () => {
-            let count = 0
-            initButton.setAttribute('disabled', 'true')
             let timer = setInterval(() => {
-                count++
+                initButton.setAttribute('disabled', 'true')
                 contador.startCountdown()
                 contador.setTimer()
-                }, 1000)
-            if(count == contador.time){
-                clearInterval(timer)
-            }
+                console.log(contador.time)
+                if(contador.time == 0){
+                    clearInterval(timer)
+                }
+            }, 1000)
+            
         })
-    },
-
-    interval(contador){
-        if(contador.time == 0){
-            contador.startInterval()
-        }
     }
 }
