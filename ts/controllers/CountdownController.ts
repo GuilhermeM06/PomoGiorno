@@ -1,10 +1,14 @@
 // class Counter{
 //     buttonStart;
 //     buttonFinish;
+
 //     constructor(){
 //         this.buttonStart = document.getElementById('starter'),
 //         this.buttonFinish = document.getElementById('finisher')
 //     }
+    
+
+
 //     start(contador){
 //         const btn = this.buttonStart;
 //         if(btn.classList.contains('start')){
@@ -26,6 +30,7 @@
 //             })
 //         }
 //     }
+
 //     stop(timer){
 //         const btn = this.buttonFinish;
 //         const btnStart = this.buttonStart
@@ -37,6 +42,7 @@
 //             })
 //         }  
 //     }
+
 //     shortBreak(contador){
 //         const btn = this.buttonStart;
 //         if(btn.classList.contains('interval')){
@@ -58,10 +64,13 @@
 //                 },1000)
 //             })
 //         }
+
 //     }
+
 //     convertClass(btn, actualClass, newClass, name){
 //         btn.classList.remove(actualClass)
 //         btn.classList.add(newClass)
 //         btn.innerHTML = name
 //     }
+
 // }

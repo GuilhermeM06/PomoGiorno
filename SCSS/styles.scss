@@ -5,13 +5,16 @@
     justify-content: $position;
 }
 
+@import 'root';
 @import 'colors';
 @import 'body';
 @import 'header';
 @import 'container';
 @import 'buttons';
 @import 'modal';
+@import 'toast';
 @import 'footer';
+@import 'responsivity'
 
 
 

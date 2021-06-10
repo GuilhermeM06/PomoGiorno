@@ -1,9 +1,11 @@
 .container{
+    width: 90%;
+    max-width: 1440px;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(23.75rem, 2fr));
     column-gap: 5rem;
     row-gap: 2rem;
-    margin: auto 5rem;
+    margin: 2rem 3rem;
 
     .timer{
         background-color: $white;
@@ -17,8 +19,9 @@
             align-items: center;
             justify-content: center;
             color: $dark-green;
-            font-size: 10rem;
+            font-size: 8rem;
         }
+
     }
 
     .work{
@@ -52,7 +55,8 @@
         }
 
         &__curiosity{
-            font-size: 12px;
+            font-size: 0.75rem;
+            line-height: 1.5rem;
             color: rgba($color: #000000, $alpha: 0.7);
             font-style: italic;
         }
@@ -63,3 +67,4 @@
     opacity: 0;
     visibility: hidden;
 }
+
