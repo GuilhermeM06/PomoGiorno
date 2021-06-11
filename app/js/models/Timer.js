@@ -7,6 +7,7 @@ System.register([], function (exports_1, context_1) {
         execute: function () {
             Timer = class Timer {
                 constructor(time) {
+                    this.counter = 0;
                     this.time = time;
                 }
                 setTimer(minutes, seconds) {
@@ -59,6 +60,7 @@ System.register([], function (exports_1, context_1) {
                                 }
                                 if (minutes == 0 && seconds == 0 && minutesBreak == 0 && secondsBreak == 0) {
                                     Toast.show("Ciclo concluido, Parabéns!!", 'complete_cicle');
+                                    this.setCounter(1);
                                     this.stopTimer(startTime);
                                     startTime = undefined;
                                     document.getElementById('clock').style.color = '#004b23';
@@ -88,6 +90,10 @@ System.register([], function (exports_1, context_1) {
                 stopTimer(startTime) {
                     clearInterval(startTime);
                     startTime = undefined;
+                }
+                setCounter(count) {
+                    this.counter += count;
+                    document.getElementById('contador').innerHTML = String(this.counter);
                 }
             };
             exports_1("Timer", Timer);

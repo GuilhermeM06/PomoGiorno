@@ -1,6 +1,7 @@
 export class Timer {
 
     time;
+    counter = 0;
 
     constructor(time){
         this.time = time;
@@ -70,6 +71,7 @@ export class Timer {
                 
                     if(minutes == 0 && seconds == 0 && minutesBreak == 0 && secondsBreak == 0){
                         Toast.show("Ciclo concluido, Parabéns!!", 'complete_cicle')
+                        this.setCounter(1)
                         this.stopTimer(startTime)
                         startTime = undefined
                         document.getElementById('clock').style.color = '#004b23'
@@ -103,5 +105,10 @@ export class Timer {
     stopTimer(startTime){
         clearInterval(startTime)
         startTime = undefined;
+    }
+
+    setCounter(count){
+        this.counter += count
+        document.getElementById('contador').innerHTML = String(this.counter)
     }
 }

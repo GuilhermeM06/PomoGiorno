@@ -73,6 +73,11 @@ header .subtitle {
   cursor: pointer;
   color: #38b000;
 }
+.container .activity__counter {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: #004b23;
+}
 .container .activity__curiosity {
   font-size: 0.75rem;
   line-height: 1.5rem;
@@ -255,4 +260,4 @@ footer .footer-title {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=Styles.css.map */
