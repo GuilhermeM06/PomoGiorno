@@ -1,5 +1,5 @@
 
-class Activities {
+export class Activities {
 
     private _atividades = [];
 

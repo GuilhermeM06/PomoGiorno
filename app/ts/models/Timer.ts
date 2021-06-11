@@ -1,4 +1,4 @@
-class Timer {
+export class Timer {
 
     time;
 
@@ -71,6 +71,7 @@ class Timer {
                     if(minutes == 0 && seconds == 0 && minutesBreak == 0 && secondsBreak == 0){
                         Toast.show("Ciclo concluido, Parabéns!!", 'complete_cicle')
                         this.stopTimer(startTime)
+                        startTime = undefined
                         document.getElementById('clock').style.color = '#004b23'
                         minutes = Math.floor(work / 60);
                         seconds = work % 60
@@ -81,7 +82,7 @@ class Timer {
                     }
                 }, 1000);
             } else {
-                alert('Time is already running!')
+                Toast.show('O ciclo já foi iniciado!', 'error')
             }
         })
 

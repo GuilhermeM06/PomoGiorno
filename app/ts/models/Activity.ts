@@ -1,4 +1,4 @@
-class Activity {
+export class Activity {
 
     private _description;
 

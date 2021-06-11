@@ -208,6 +208,11 @@ header .subtitle {
   border-color: #38b000;
   color: white;
 }
+.toast--error {
+  background: #ac0d0d;
+  border-color: red;
+  color: white;
+}
 
 footer {
   width: 90%;

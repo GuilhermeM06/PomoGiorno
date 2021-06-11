@@ -36,4 +36,10 @@
     border-color: $green;
     color: $white;
    }
+
+   &--error{
+    background: $dark-red;
+    border-color: $red;
+    color: $white;
+   }
 }
